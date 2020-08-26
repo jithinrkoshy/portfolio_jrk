@@ -235,6 +235,7 @@ height:100px;
 }
 
 
+
 .div-hide{
     display: none;
 }
@@ -302,40 +303,6 @@ height:100px;
 }
 
 
-@media only screen and (max-width:1137px){
-
-    .overview{
-  
-      width: calc(100% - 500px);
-      overflow: scroll;
-  
-    }
-    
-  }
-  
-  @media only screen and (max-width:970px){
-  
-    .overview{
-  
-      width: calc(100% - 400px);
-      overflow: scroll;
-  
-    }
-    
-  }
-
-  
-  @media only screen and (max-width:660px){
-  
-    .overview{
-  
-      width: calc(100% - 50px);
-      overflow: scroll;
-  
-    }
-    
-  }
-  
   
 
 

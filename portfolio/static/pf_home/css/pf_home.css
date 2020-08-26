@@ -223,6 +223,9 @@ TRYING
 
 }
 
+.row-for-home-btn .col-md-4{
+    margin: 20px;
+}
 
 
 .row-for-home-btn .btn-outline-dark {

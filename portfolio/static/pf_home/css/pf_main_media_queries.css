@@ -18,10 +18,73 @@
 
         height: 600px;
     }
-
+    
     .custom_row_lower{
         height:600px;
        /* width:100%; */
    }
 
 }
+
+
+
+@media only screen and (max-width:1137px){
+
+    .row_link{
+        opacity: 1;
+        transition: opacity 0.2s;
+    }
+
+
+    .row-for-home-btn .btn-outline-dark {
+        
+        transform: scale(1);
+
+      }
+      
+      .row-for-home-btn .btn-outline-dark:hover {
+ 
+        transform: scale(1);
+    
+      }
+
+}
+
+
+
+@media only screen and (max-width:1137px){
+
+    .overview{
+  
+      width: calc(100% - 500px);
+      overflow: scroll;
+  
+    }
+    
+  }
+  
+  @media only screen and (max-width:970px){
+  
+    .overview{
+  
+      width: calc(100% - 400px);
+      overflow: scroll;
+  
+    }
+    
+  }
+
+  
+  @media only screen and (max-width:660px){
+  
+    .overview{
+  
+      width: calc(100% - 50px);
+      overflow: scroll;
+  
+    }
+    
+  }
+  
+
+

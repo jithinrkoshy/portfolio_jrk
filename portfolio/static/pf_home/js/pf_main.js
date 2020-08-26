@@ -1,15 +1,24 @@
 
 $(document).ready(function(){
 
-   
+        mq = window.matchMedia( "(max-width: 1137px)" ); 
+
         $('.link_content').hover(function() {
-            // alert("hover");
+
+          if (!mq.matches) {
+          
             var element  = $(this).find(".row_link")[0]
           $(element).css('opacity', '1');
+
+          }
         }, function() {
-          // on mouseout, reset the background colour
+
+          if (!mq.matches) {
+          
           var element  = $(this).find(".row_link")[0]
           $(element).css('opacity', '0');
+
+          }
         });
 
 
