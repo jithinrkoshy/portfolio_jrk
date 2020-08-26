@@ -1,0 +1,27 @@
+@media only screen and (max-width:770px){
+
+    .custom_row_upper{
+
+        height: 450px;
+    }
+
+    .custom_row_lower{
+        height:800px;
+       /* width:100%; */
+   }
+
+}
+
+@media only screen and (max-width:325px){
+
+    .custom_row_upper{
+
+        height: 600px;
+    }
+
+    .custom_row_lower{
+        height:600px;
+       /* width:100%; */
+   }
+
+}

@@ -1,0 +1,246 @@
+.pf_footer .container-fluid{
+    height:100px;
+    
+}
+
+.sub-custom-container{
+    min-height:100vh;
+    background-color: #d4c5c5;
+
+}
+.row_about{
+    margin-top: 40px;
+    
+    
+}
+
+.cnt{
+    
+    position: relative;
+
+}
+
+.about-pic{
+   
+    width:110px;
+    margin: 0 auto;
+    
+}
+
+
+.about-pic img{
+
+    width:100px;
+    height:auto;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+
+.about-title h3{
+
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size:200%;
+
+}
+
+.about-pic, .about-title, .about-content{
+    margin-top: 30px;
+}
+
+.about-content{
+    margin-bottom: 40px;
+    padding: 20px;
+    border: 1px solid transparent;
+    background-color: #efefef;
+    border-radius: 10px;
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size:110%;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.about-back-div{
+    position: absolute;
+    top:1%;
+    right:0;
+    margin-right: 10px;
+    /* transform: translate(-50%,-50%); */
+    width:100px;
+    height: 100px;
+   
+}
+
+.about-back-div i{
+    position: relative;
+    display: block;
+    font-size: 400%;
+   
+    color: #800000;
+    transform: scale(0.95);
+    text-align: center;
+    transition: transform 0.2s;
+    cursor: pointer;
+    
+}
+
+.about-back-div i:hover,
+.about-back-div i:active{
+    transform: scale(1);
+}
+
+
+.input-name{
+    width:80%;
+    
+}
+
+.input-code{
+    width:10%;
+    
+}
+.input-phone{
+    width:67%;
+   
+}
+
+.input-email{
+    width:80%;
+
+    
+}
+
+.input-message{
+    width:80%;
+
+    
+}
+
+.row_field{
+
+    margin-top: 30px;
+
+}
+
+.container_submit{
+    margin-top: 30px;
+}
+
+.contact-col-field-label{
+
+
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 120%;
+    
+
+}
+
+.row_contact_title{
+    padding-top:30px;
+     padding-bottom: 30px;
+    font-family: Lato, Arial, Helvetica, sans-serif;
+  
+
+}
+
+.row_contact_title h1{
+
+      font-weight: 300;
+    font-size: 300%;
+
+}
+
+
+.row_contact_details{
+
+    padding-top:30px;
+     padding-bottom: 30px;
+    font-family: Lato, Arial, Helvetica, sans-serif;
+
+
+
+}
+
+.row_contact_details_container{
+    padding:20px;
+
+    border-radius: 10px;
+    background-color: #efefef;
+
+}
+
+.success_message h4{
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: #2b8633;
+
+
+}
+
+
+
+.row_process_title{
+
+    padding-top:30px;
+    padding-bottom: 30px;
+   font-family: Lato, Arial, Helvetica, sans-serif;
+ 
+
+}
+
+
+.row_process_title h1{
+
+    font-weight: 300;
+  font-size: 300%;
+
+}
+
+
+.row_process_details{
+
+
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 120%;
+    padding-bottom: 50px;
+    
+}
+
+.row_for_process_image{
+    /* border: 1px solid red; */
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+
+}
+
+.row_for_process_image img{
+    width:100px;
+    height:100px;
+    border-radius: 10px;
+}
+
+
+/* .row_process_details_container .col-sm-3{
+
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 120%;
+    
+}
+ */
+
+
+ .title-line{
+    content: ' ';
+    display: block;
+    height: 2px;
+    width: 80px;
+    background-color: #800000;
+    margin:20px auto;
+ }

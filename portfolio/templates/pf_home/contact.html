@@ -1,0 +1,108 @@
+{% extends 'pf_home/base.html'%}
+{% load staticfiles%}
+{% block content %}
+
+
+<div class="container">
+    <div class="row justify-content-md-center row_contact_title">
+        <div class="col-md-6 text-center">
+                <h1>Contact</h1>
+                <div class="title-line"></div>
+                
+        </div>
+
+        
+    </div>
+    
+</div>
+
+<div class="container">
+    
+    <div class="row justify-content-md-center">
+
+        {% if status == 'success' %}
+        <div class="col-md-8 success_message">
+            <h4>Successfully Sumbitted</h4>
+           
+        </div>
+          
+        {% endif %}
+        <div class="col-md-8">
+            <form method="POST" class="contact-form">
+                {%csrf_token%}
+                <div class="container">
+                {% for field in form%}
+                 
+
+                {% if field.label != 'Code' %}
+                
+                    <div class="row row_field">
+                        <div class="col-md-3 contact-col-field-label">
+                              
+                              {{field.label}}
+                        </div>
+                        <div class="col-md-9">
+                            {% if field.label == 'Phone' %}
+
+                            {% for field_sub in form%}
+
+                            {% if field_sub.label == 'Code' %}
+                            +{{field_sub}}
+
+                            {% endif %}
+
+                            {% endfor %}
+                                 
+                            {% endif %}
+                            
+                            {{field}}
+                        </div>
+                    </div>
+
+                    
+                {% endif %}
+                
+                {% endfor %}
+            </div>
+
+                
+                <div class="container container_submit">
+                    <div class="row">
+                        <div class="col-md-3">
+                              
+                        </div>
+                        <div class="col-md-9">
+                            <input type="submit" class="btn btn-primary" value="Submit">
+                        </div>
+                    </div>
+                </div>
+                    
+               
+                
+             
+                
+
+            </form>
+            
+        </div>
+    </div>
+    
+</div>
+
+<div class="container">
+    <div class="row justify-content-md-center row_contact_details">
+        <dl class="row row_contact_details_container text-center">
+            <dt class="col-sm-3">Email</dt>
+            <dd class="col-sm-9">jrk.webdev@gmail.com</dd>
+            <dt class="col-sm-3">Phone</dt>
+            <dd class="col-sm-9">+91 9207600970</dd>
+
+        </dl>    
+    </div>
+</div>
+
+<div class="about-back-div">
+    <a href="{% url 'pf_home:portfolio' %}"><i class="ion-arrow-return-left"></i></a>
+</div>
+
+{% endblock %}

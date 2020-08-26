@@ -1,0 +1,45 @@
+{% extends 'pf_home/base.html'%}
+{% load staticfiles%}
+{% block content %}
+
+<div class="container cnt">
+    <div class="row justify-content-md-center">
+        <div class="col-md-8">
+            <div class="container">
+                <div class="row row_about">
+                    <div class="col-12">
+                         <div class="about-pic">
+                             <img src="{% static 'pf_home/images/index.png'%}" alt="about-pic">
+                         </div>
+                         <div class="about-title text-center">
+                             <h3>Jithin Reji Koshy</h3>
+                         </div>
+                    </div>
+                    <div class="col-12">
+
+                        <div class="about-content">
+                            <p>
+                                I am pursuing my Undergraduate degree from A P J Abdul Kalam University Kerala in Computer Science and Engineering.
+                                A keen interest in Web Development drove me to explore many programming languages, scripts and frameworks like
+                                Django. Python programming language is considered as my personal favourite and is the reason for choosing
+                                Django. Django is robust, flexible and has got many features for website security. It reduces much of my effort
+                                and able to build powerful and responsive websites. My primary concern for the website is that it should be easy
+                                for the user, elegant and powerful in processing.
+                            </p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+   
+</div>
+
+<div class="about-back-div">
+    <a href="{% url 'pf_home:portfolio' %}"><i class="ion-arrow-return-left"></i></a>
+</div>
+
+{% endblock %}

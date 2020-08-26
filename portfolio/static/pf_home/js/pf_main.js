@@ -1,66 +1,56 @@
 
-
-function loading(){
-
-   var i=0;
-  function myLoop(){
-
-  
-    setTimeout(function() {   //  call a 3s setTimeout when the loop is called
-        w = (i+1).toString();
-        w = w+"%";
-        $("#percentage-text").text(w);
-        $(".load-fragment").width(w);  //  your code here
-        i++;                    //  increment the counter
-        if (i < 100) {           //  if the counter < 10, call the loop function
-          myLoop();             //  ..  again which will trigger another 
-        }                       //  ..  setTimeout()
-      }, 50);
-
-    }
-    myLoop();
-
-    
-    setTimeout(function(){
-
-        window.location.href =   window.location.href + "home";
-    
-      },5500);
-}
-
 $(document).ready(function(){
 
+   
+        $('.link_content').hover(function() {
+            // alert("hover");
+            var element  = $(this).find(".row_link")[0]
+          $(element).css('opacity', '1');
+        }, function() {
+          // on mouseout, reset the background colour
+          var element  = $(this).find(".row_link")[0]
+          $(element).css('opacity', '0');
+        });
 
 
+        $("#dhruma-btn").click(function(){
 
 
+          $("#overview-dhruma").removeClass("div-hide");
+        });
+
+        $("#dhruma-close").click(function(){
 
 
-  var direction = "";
-  oldx = 0;
+          $("#overview-dhruma").addClass("div-hide");
+        });
 
-  $(document).mousemove(function(e){
-
-    var el = $(".bg-p-container");
+        $("#davinci-btn").click(function(){
 
 
-  if(e.pageY > oldx){
-    console.log("down")
-    el.css({ '-moz-transform': 'rotate3d(1, 0, 0,' + 70 + 'deg)'});
-    
-    
-  }
-  else{
-    console.log("up")
-    el.css({ '-moz-transform': 'rotate3d(1, 0, 0,' + 45 + 'deg)'});
-  }
+          $("#overview-davinci").removeClass("div-hide");
+        });
 
-  oldx = e.pageY;
-
-  });
+        $("#davinci-close").click(function(){
 
 
-  
+          $("#overview-davinci").addClass("div-hide");
+        });
+
+        if (performance.navigation.type == performance.navigation.TYPE_RELOAD) {
+          var st = window.location.href;
+          split_st = st.split("/");
+          st_length  = split_st.length
+          if(split_st[st_length-2]=="success" && split_st[st_length-3]=="contact"){
+            window.location.href = "http://"+ window.location.hostname +":8000/home/portfolio/contact";
+          }
+
+
+          
+        }
+      
+
 
 
 });
+

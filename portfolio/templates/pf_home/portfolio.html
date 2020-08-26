@@ -1,0 +1,216 @@
+<!doctype html>
+{% load staticfiles %}
+<html lang="en">
+<head>   
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">  
+
+  <!-- CSS -->
+  <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'pf_home/css/pf_main.css' %}">
+  <link rel="stylesheet" href="{% static 'pf_home/css/pf_main_media_queries.css' %}">
+</head> 
+<title>
+    JrK
+</title> 
+
+<body>
+
+    
+<header class="pf_main_header fade_content">
+    <div class="container-fluid bg-light">
+       
+        <div class="row custom_row_upper">
+            <div class="col-md-8 upper_col_left">
+              <h1 class="animate__animated animate__fadeInLeft">Jithin Reji Koshy</h1>
+              <h3 class="animate__animated animate__fadeInLeft">Django Web Development</h3>
+              <h5 class="animate__animated animate__fadeInLeft">Elegant and Easy</h5>
+            </div>
+
+            <div class="col-md-4 upper_col_right">
+                <div class="container-fluid custom_cf_right_nav">
+                    <div class="row row_right_navigation">
+                        <div class="col-md-6">
+                             <a href="{% url 'pf_home:about'%}"><button class="btn btn-light animate__animated animate__fadeInRight">
+                                 <span class="rr_navigation_text">About</span></button></a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="{% url 'pf_home:contact'%}"><button class="btn btn-light animate__animated animate__fadeInRight">
+                                <span class="rr_navigation_text">Contact</span></button></a>
+                        </div>
+                        <div class="col-md-12">
+                            <a href="{% url 'pf_home:process'%}"><button class="btn btn-light animate__animated animate__fadeInRight">
+                                <span class="rr_navigation_text">Process</span></button></a>
+                        </div>
+                       
+                    </div>
+
+                </div>
+                
+            </div>
+
+        </div>
+
+
+        
+    </div>
+
+</header>
+
+<section class="section-websites fade_content">
+
+    <div class="container-fluid bg-light">
+        <div class="row custom_row_lower">
+            <div class="col-lg-6" id="web_demo_dhruma_col">
+                 
+
+                    <div class="web_demo_content">
+
+                        <div class="web_bg_content animate__animated animate__fadeInUp">
+
+                            <div class="link_box">
+                                
+
+                                <div class="link_content">
+
+                                    <div class="container h-100">
+                                        <div class="row h-100 align-items-center row_link">
+                                            <div class="col-md-12">
+                                                <a id="dhruma-btn"><button type="button" class="btn btn-outline-light">Overview</button>
+                                                </a>
+                                                </div>
+
+                                            <div class="col-md-12">
+                                                <a href="http://dhruma.pythonanywhere.com/"><button type="button" class="btn btn-outline-light">Visit Site</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                           
+                            
+                        </div>
+                      
+                    </div>
+              
+            </div>
+
+            <div class="col-lg-6" id="web_demo_davinci_col">
+
+                
+
+                    <div class="web_demo_content ">
+
+                        <div class="web_bg_content animate__animated animate__fadeInUp">
+
+
+                            <div class="link_box">
+                                <div class="link_content">
+
+                                    <div class="container h-100">
+                                        <div class="row h-100 align-items-center row_link">
+                                            <div class="col-md-12">
+                                                <a id="davinci-btn" href="#"><button type="button" class="btn btn-outline-light">Overview</button>
+                                                </a>
+                                            </div>
+
+                                            <div class="col-md-12">
+                                                <a href="http://davincivault.pythonanywhere.com/"><button type="button" class="btn btn-outline-light">Visit Site</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>  
+                          
+                            
+
+
+
+                        </div>
+
+                     
+                       
+                    </div>
+                  
+                 
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<div class="overview div-hide" id="overview-dhruma">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <button id="dhruma-close" class="btn btn-danger">Close</button>
+            </div>
+            <div class="col-md-12">
+                <img src="{% static 'pf_home/images/dhrumawebsite.png'%}" alt="web-pic">
+            </div>
+            <div class="col-md-12 overview_content">
+                <p>
+                    This website portrays a hypothetical organisation working for the conservation 
+                    of trees. As a part of their process, this organisation maintains some data 
+                    about forests, mainly trees, in the website. Anyone visiting the site can 
+                    navigate through the list of trees and choose any tree. This will produce some
+                    data related to that tree along with some pictures. This website is developed using
+                    HTML, CSS, Javascript and Python. Django, a web development framework, has been used
+                    for the development.
+
+                </p>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<div class="overview div-hide" id="overview-davinci">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <button id="davinci-close" class="btn btn-danger">Close</button>
+            </div>
+            <div class="col-md-12">
+                <img src="{% static 'pf_home/images/davinciwebsite.png'%}" alt="web-pic">
+            </div>
+            <div class="col-md-12 overview_content">
+                <p>
+                    It is an online image vault where users can store pictures. In addition to that
+                    , users can make image collages and convert image to some other formats. The 
+                    whole website is focussed on the design and server processing. This website is developed using
+                    HTML, CSS, Javascript and Python. Django, a web development framework, has been used
+                    for the development.
+                </p>
+            </div>
+            
+        </div>
+    </div>
+</div>
+ 
+<footer class="pf_footer">
+    <div class="container-fluid bg-dark">
+
+    </div>
+</footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script type="text/javascript" src="{% static 'pf_home/js/pf_main.js' %}"></script>
+</body>
+
+</html>

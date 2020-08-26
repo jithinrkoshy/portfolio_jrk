@@ -1,0 +1,168 @@
+{% extends 'pf_home/base.html'%}
+{% load staticfiles%}
+{% block content %}
+
+
+
+<div class="container">
+    <div class="row justify-content-md-center row_process_title">
+        <div class="col-md-6 text-center">
+                <h1>Process</h1>
+                <div class="title-line"></div>
+                
+                
+        </div>
+        
+
+        
+    </div>
+    
+</div>
+
+<div class="container">
+    
+    <div class="row justify-content-md-center">
+        <div class="col-md-8 row_process_details">
+
+             <div class="container-fluid row_process_details_container">
+                 <div class="row">
+                    <div class="col-sm-12">
+                        <div class="container">
+                            <div class="row text-center row_for_process_image">
+                                <div class="col-sm-12">
+                                    <img src="{% static 'pf_home/images/sketch.png'%}" alt="process-pic">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                    <div class="col-sm-3">
+                        <b>Step 1</b> 
+                     </div>
+                     <div class="col-sm-9">
+                        Simple sketch of the website to provide an insight about the design
+                    </div>
+
+
+                    <div class="col-sm-12">
+                        <div class="container">
+                            <div class="row text-center row_for_process_image">
+                             
+                                <div class="col-sm-12">
+                                    <img src="{% static 'pf_home/images/reviewclient.jpeg'%}" alt="process-pic">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-sm-3">
+                        <b>Step 2</b> 
+                     </div>
+                     <div class="col-sm-9">
+                        Review and confirmation from the client
+                    </div>
+
+
+                    <div class="col-sm-12">
+                        <div class="container">
+                            <div class="row text-center row_for_process_image">
+                  
+                                <div class="col-sm-12">
+                                    <img src="{% static 'pf_home/images/build.jpg'%}" alt="process-pic">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-sm-3">
+                        <b>Step 3</b> 
+                     </div>
+                     <div class="col-sm-9">
+                        Build website using django framework
+                    </div>
+
+
+                    <div class="col-sm-12">
+                        <div class="container">
+                            <div class="row text-center row_for_process_image">
+                                <!-- <div class="col-sm-3">
+
+                                </div> -->
+                                <div class="col-sm-12">
+                                    <img src="{% static 'pf_home/images/testing.png'%}" alt="process-pic">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-sm-3">
+                        <b>Step 4</b> 
+                     </div>
+                     <div class="col-sm-9">
+                        Testing the website
+                    </div>
+
+
+                    <div class="col-sm-12">
+                        <div class="container">
+                            <div class="row text-center row_for_process_image">
+                                <!-- <div class="col-sm-3">
+
+                                </div> -->
+                                <div class="col-sm-12">
+                                    <img src="{% static 'pf_home/images/finalreview.jpeg'%}" alt="process-pic">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-sm-3">
+                        <b>Step 5</b> 
+                     </div>
+                     <div class="col-sm-9">
+                        Final Review
+                    </div>
+
+
+                    <div class="col-sm-12">
+                        <div class="container">
+                            <div class="row text-center row_for_process_image">
+                 
+                                <div class="col-sm-12">
+                                    <img src="{% static 'pf_home/images/hosting.jpg'%}" alt="process-pic">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-sm-3">
+                        <b>Step 6</b> 
+                     </div>
+                     <div class="col-sm-9">
+                        Hosting the website
+                    </div>
+
+                 </div>
+             </div>
+        
+
+        </div>
+
+        
+    </div>
+    
+</div>     
+
+<div class="about-back-div">
+    <a href="{% url 'pf_home:portfolio' %}"><i class="ion-arrow-return-left"></i></a>
+</div>
+
+{% endblock %}
